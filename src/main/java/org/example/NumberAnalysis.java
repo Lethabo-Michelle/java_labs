@@ -4,11 +4,7 @@ import java.util.Scanner;
 
 public class NumberAnalysis {
 
-    public void isEvenOrOdd(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter number: ");
-        int num = scanner.nextInt();
-
+    public void isEvenOrOdd(int num){
         if(num == 0){
             System.out.println("num is 0 and is even");
         }

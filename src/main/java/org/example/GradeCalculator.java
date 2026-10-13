@@ -4,11 +4,7 @@ import java.util.Scanner;
 
 public class GradeCalculator {
 
-    public void passOrFail(){
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter your marks: ");
-        int marks = scanner.nextInt();
-
+    public void passOrFail(int marks){
         if(marks < 0 || marks > 100){
             System.out.println("Invalid marks");
         }

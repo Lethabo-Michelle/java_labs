@@ -2,9 +2,8 @@ package org.example;
 
 public class ArraysPractice {
 
-    public void StudentMarks(){
-        double[] marks = {23, 54.2,  78, 97, 54.3};
-        int total = 0;
+    public void StudentMarks(double[] marks){
+        double total = 0;
 
         for (int i = 0; i < marks.length; i++) {
             total += marks[i];
@@ -15,8 +14,7 @@ public class ArraysPractice {
 
     }
 
-    public void ArrayStatistics(){
-        int[] nums = {19, 4, 6, 3, 34, 1};
+    public void ArrayStatistics(int[] nums){
         int largest = nums[0];
         int smallest = nums[0];
 
