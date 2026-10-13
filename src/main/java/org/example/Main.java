@@ -4,8 +4,8 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     static void main() {
-        GradeCalculator passOrFail = new GradeCalculator();
-        passOrFail.passOrFail();
+        ArraysPractice arr = new ArraysPractice();
+        arr.arraySearch(new int[]{1, 3, 4, 5, 6, 4,7}, 14);
 
     }
 }
