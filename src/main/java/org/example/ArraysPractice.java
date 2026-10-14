@@ -5,14 +5,15 @@ public class ArraysPractice {
     public void studentMarks(double[] marks){
         double total = 0;
 
-        for (int i = 0; i < marks.length; i++) {
-            total += marks[i];
-            System.out.println(marks[i]);
+        for (double mark : marks) {
+            total += mark;
+            System.out.println(mark);
         }
         System.out.println("Total: " + total);
         System.out.println("Average: " + total/ marks.length);
 
     }
+
 
     public void arrayStatistics(int[] nums){
         int largest = nums[0];
@@ -54,11 +55,10 @@ public class ArraysPractice {
         int evenCount = 0;
         int oddCount = 0;
 
-        for (int i = 0; i < nums.length; i++) {
-            if(nums[i] % 2 == 0 || nums[i] == 0){
+        for (int num : nums) {
+            if (num % 2 == 0 || num == 0) {
                 evenCount += 1;
-            }
-            else {
+            } else {
                 oddCount += 1;
             }
         }
@@ -66,6 +66,4 @@ public class ArraysPractice {
         System.out.println("Odd numbers: " + oddCount);
         System.out.println("Even numbers: " + evenCount);
     }
-
-
 }
