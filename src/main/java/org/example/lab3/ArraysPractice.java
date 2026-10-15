@@ -1,5 +1,7 @@
 package org.example.lab3;
 
+import java.util.ArrayList;
+
 public class ArraysPractice {
 
     public void studentMarks(double[] marks){
@@ -54,11 +56,15 @@ public class ArraysPractice {
     public void evenOddCount(int[] nums){
         int evenCount = 0;
         int oddCount = 0;
+        ArrayList<Integer> evenNums = new ArrayList<>();
+        ArrayList<Integer> oddNums = new ArrayList<>();
 
         for (int num : nums) {
             if (num % 2 == 0 || num == 0) {
+                evenNums.add(num);
                 evenCount += 1;
             } else {
+                oddNums.add(num);
                 oddCount += 1;
             }
         }
