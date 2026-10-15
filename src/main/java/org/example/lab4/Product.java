@@ -1,4 +1,4 @@
-package org.example;
+package org.example.lab4;
 
 public class Product {
     private int productId;
@@ -20,11 +20,11 @@ public class Product {
     }
 
     public void buy(int quantity){
-        double amountdue;
+        double amountDue;
         if(quantity > 0 && stock >= quantity){
             stock -= quantity;
-            amountdue = quantity * productPrice;
-            System.out.println("Amount Due = " + amountdue);
+            amountDue = quantity * productPrice;
+            System.out.println("Amount Due = " + amountDue);
         }
     }
 }

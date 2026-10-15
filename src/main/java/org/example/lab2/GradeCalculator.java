@@ -1,20 +1,22 @@
-package org.example;
-
-import java.util.Scanner;
+package org.example.lab2;
 
 public class GradeCalculator {
 
-    public void passOrFail(int marks){
+    static void main() {
+        passOrFail(87);
+    }
+
+    public static void passOrFail(int marks){
         if(marks < 0 || marks > 100){
             System.out.println("Invalid marks");
         }
          if(marks < 50){
              System.out.println("Fail");
          }
-         else if(marks >= 50 && marks < 70) {
+         else if(marks < 70) {
              System.out.println("Pass");
          }
-         else if (marks >= 70 && marks < 80) {
+         else if (marks < 80) {
              System.out.println("Merit");
          }
          else {

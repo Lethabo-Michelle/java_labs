@@ -1,4 +1,4 @@
-package org.example;
+package org.example.lab4;
 
 public class BankAccount {
     private String accountHolder;
