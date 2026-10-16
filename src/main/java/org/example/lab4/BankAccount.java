@@ -27,6 +27,7 @@ public class BankAccount {
             System.out.println("Insufficient balance");
         } else{
             balance -= amount;
+            System.out.println("balance: " + balance);
         }
     }
 }

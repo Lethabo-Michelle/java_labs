@@ -9,7 +9,7 @@ public class Rectangle {
         this.height = height;
     }
 
-    public double perimeter(){
-        return 2 * (width + height);
+    public void perimeter(){
+        System.out.println("perimeter " + (2 * (width + height)));
     }
 }
